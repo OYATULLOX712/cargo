@@ -1,0 +1,251 @@
+.apply{
+    margin-top: 40px;
+    & .container{
+        display: flex;
+        // align-items: center;
+    }
+    &-info{
+        width: 625px;
+    }
+    &-img{
+        width: 500px;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 45px;
+        color: #fff;
+        position: relative;
+        margin-bottom: 62px;
+        & span{
+            position: absolute;
+            bottom: 20%;
+            right: 5%;
+            width: 15%;
+            height: 2px;
+            background: $green;
+        }
+    }
+    &-box{
+        background: $gray;
+        border-radius: 20px;
+        padding: 70px 50px 40px;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    &-step{
+        background: #282B38;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #363A4D;
+        font-weight: 700;
+        font-size: 24px;
+        color: #BFBFBF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        &.active{
+            background: $green;
+            color: #fff;
+        }
+        &:nth-child(2){
+            transform: translate(175%,-50%);
+        }
+        &:nth-child(3){
+            transform: translate(350%,-50%);
+        }
+    }
+    &-form{
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &.active{
+            display: flex;
+        }
+    }
+
+    &-input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        & label{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 19px;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        & input{
+            width: 248px;
+            padding: 18px 20px;
+            background: #fff;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            color: #000;
+            margin-bottom: 6px;
+            outline: none;
+            border: none;
+            &::placeholder{
+                color: #CBCBCB;
+                font-weight: 400;
+            }
+        }
+    }
+    &-checkbox{
+        display: flex;
+        flex-direction: column;
+    }
+    &-check{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        & input{
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            color: #282B38;
+            border: 1px solid #282B38;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        & p{
+            color: #fff;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+    &-photo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        width: 100%;
+        & p{
+            font-weight: 400;
+            font-size: 15px;
+            color: #fff;
+        }
+        & a{
+            font-weight: 400;
+            font-size: 13px;
+            color: #E53535;
+        }
+    }
+    &-download{
+        width: 100%;
+        border: 1px dashed rgba(255, 255, 255, 0.26);
+        border-radius: 10px;
+        padding: 12px;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+}
+
+// apply step 2
+
+.apply{
+    &-name{
+        width: 100%;
+        & input{
+            width: 100%;
+        }
+    }
+    &-area{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 44px;
+        & label{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 19px;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        & textarea{
+            width: 100%;
+            padding: 18px 20px;
+            background: #fff;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            color: #000;
+            margin-bottom: 6px;
+            outline: none;
+            border: none;
+            &::placeholder{
+                color: #CBCBCB;
+                font-weight: 400;
+            }
+        }
+    }
+    &-btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+    &-back{
+        padding: 22px 46px;
+        border: 1px solid #E58D35;
+        border-radius: 90px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+// apply step 3
+
+.apply{
+    &-done{
+        flex-direction: column;
+    }
+    &-circle{
+        font-size: 112px;
+        color: $green;
+        margin-bottom: 34px;
+        &::after{
+            content: "\f058";
+        }
+    }
+    &__done-title{
+        font-weight: 700;
+        font-size: 32px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &__done-text{
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 37px;
+
+    }
+    &__done-list{
+        font-weight: 700;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 13px;
+    }
+    &-list{
+        padding-left: 30px;
+    }
+    &-item{
+        list-style: outside;
+        color: #fff;
+        margin-bottom: 7px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}

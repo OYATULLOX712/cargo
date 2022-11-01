@@ -1,0 +1,54 @@
+.accardion{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &__block{
+
+    }
+    &__box{
+        width: 100%;
+        padding: 18px 19px 21px 34px;
+        border-radius: 10px;
+        border: 1px solid #3A444E;
+        margin-bottom: 16px;
+        transition: 0.3s;
+        cursor: pointer;
+        &.active{
+            background: #FFFFFF;
+            box-shadow: 5px 15px 40px rgba(11, 24, 97, 0.32);
+
+            .accardion__title{
+                line-height: 44px;
+                color: #000;
+                &::after{
+                    content: "\f0aa";
+                    color: $gold;
+                }
+            }
+            .accardion__body{
+                display: block;
+            }
+        }
+    }
+    &__title{
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &::after{
+            content: "\f0a9";
+            font-size: 26px;
+        }
+    }
+    &__body{
+        display: none;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        color: #282B38;
+    }
+}

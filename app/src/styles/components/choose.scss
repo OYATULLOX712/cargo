@@ -1,0 +1,52 @@
+.choose{
+    background: $gray;
+    width: 95%;
+    margin:0 auto;
+    padding: 90px 0;
+    border-radius: 20px;
+
+    &-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+    &-box{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &-icon{
+        width: 113px;
+        height: 113px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #6C7188;
+        margin-bottom: 20px;
+        & i{
+            font-size: 50px;
+            color: #fff;
+            background: $green;
+            width: 93px;
+            height: 93px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::after{
+                content: "\f316";
+            }
+        }
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+    }
+}
